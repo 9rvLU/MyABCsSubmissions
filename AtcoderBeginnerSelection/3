@@ -1,0 +1,3 @@
+binaryList=list(input())
+
+print(binaryList.count('1'))

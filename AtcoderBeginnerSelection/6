@@ -1,0 +1,19 @@
+n,a,b=map(int, input().split())
+
+sumDigits=0
+sumDigitsDictionary={}
+
+for i in range(1,n+1):
+    for j in list(str(i)):
+        sumDigits+=int(j)
+    sumDigitsDictionary[i]=sumDigits
+    sumDigits=0
+
+sum=0
+
+for i in sumDigitsDictionary.items():
+    if a<=i[1]:
+        if i[1]<=b:
+            sum+=i[0]
+        
+print(sum)

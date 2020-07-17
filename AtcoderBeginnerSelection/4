@@ -1,0 +1,17 @@
+N=input()
+A=list(map(int, input().split()))
+
+counter=-1
+
+def division(n):
+    if n%2==0:
+       return n/2
+    else:
+        return -1
+
+while A.count(-1)==0:
+    counter+=1
+    A=list(map(division, A))
+    
+
+print(counter)
